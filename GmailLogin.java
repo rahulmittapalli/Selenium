@@ -14,10 +14,10 @@ public class GmailLogin {
 		System.setProperty("webdriver.gecko.driver", "C://Users/rahul/Downloads/geckodriver-v0.15.0-win64/geckodriver.exe");
 		WebDriver driver =new FirefoxDriver();
 		driver.get("https://accounts.google.com/ServiceLogin#identifier");
-		driver.findElement(By.id("Email")).sendKeys("mittapalli.rahul@gmail.com");
+		driver.findElement(By.id("Email")).sendKeys("email");
 		driver.findElement(By.id("next")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.id("Passwd")).sendKeys("naveenrahul");
+		driver.findElement(By.id("Passwd")).sendKeys("password");
 		driver.findElement(By.xpath(".//*[@id='signIn']")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@class='WaidBe']")).click();
